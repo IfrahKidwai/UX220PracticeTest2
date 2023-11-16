@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            class Ifrah extends HTMLElement{
+                connectedCallback(){
+                this.innerHTML = "Ifrah was here!"
+                }
+            }
+
+            customElements.define("x-ifrah", Ifrah)
+        </script>
+    </head>
+    <body>
+        <x-ifrah></x-ifrah>
+    </body>
+</html>
